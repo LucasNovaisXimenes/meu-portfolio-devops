@@ -1,136 +1,552 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Portfolio DevOps</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lucas Novais Ximenes – DevOps & Cloud Engineer</title>
+  <meta name="description" content="Analista de Infraestrutura, DevOps e Cloud com 6+ anos em ambientes críticos. Azure, Kubernetes, Terraform, CI/CD." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
-    <header>
-        <nav>
-            <div class="logo">
-                <h2>💻 DevOps Portfolio</h2>
+
+  <!-- NAVBAR -->
+  <header>
+    <nav class="navbar">
+      <div class="nav-brand">
+        <span class="brand-text">Lucas<span class="accent">.</span>dev</span>
+      </div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#experiencia">Experiência</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#certificacoes">Certificações</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menu">
+        <i class="fas fa-bars"></i>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="hero-bg"></div>
+      <div class="container hero-content">
+        <div class="hero-text">
+          <p class="hero-greeting">Olá, eu sou</p>
+          <h1 class="hero-name">Lucas Novais Ximenes</h1>
+          <div class="hero-subtitle">
+            <span id="typed-text"></span><span class="cursor">|</span>
+          </div>
+          <p class="hero-description">
+            Especialista em Cloud, Kubernetes e CI/CD com mais de 6 anos sustentando ambientes críticos de alta disponibilidade. Atualmente garantindo infraestrutura de missão crítica na Caixa Econômica Federal.
+          </p>
+          <div class="hero-stats">
+            <div class="stat">
+              <div class="stat-top"><span class="stat-number" data-target="6">0</span><span class="stat-plus">+</span></div>
+              <span class="stat-label">Anos de Exp.</span>
             </div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#projetos">Projetos</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <section id="home" class="hero">
-            <div class="hero-content">
-                <h1>Olá! 👋 Eu sou <span>Lucas Novais Ximenes</span></h1>
-                <p>Especialista em DevOps e Automação</p>
-                <div class="cta-buttons">
-                    <a href="#projetos" class="btn primary">Ver Projetos</a>
-                    <a href="#contato" class="btn secondary">Entrar em Contato</a>
-                </div>
+            <div class="stat">
+              <div class="stat-top"><span class="stat-number" data-target="3">0</span></div>
+              <span class="stat-label">Cloud Providers</span>
             </div>
-        </section>
-
-        <section id="sobre" class="about">
-            <div class="container">
-                <h2>🚀 Sobre Mim</h2>
-                <div class="about-content">
-                    <div class="about-text">
-                        <p>Sou apaixonado por automação, infraestrutura como código e cultura DevOps.
-                            Trabalho com ferramentas modernas para criar soluções eficientes e escaláveis.</p>
-
-                        <div class="skills">
-                            <h3>🛠️ Tecnologias</h3>
-                            <div class="skill-tags">
-                                <span class="skill">Git & GitHub</span>
-                                <span class="skill">Docker</span>
-                                <span class="skill">Terraform</span>
-                                <span class="skill">GitHub Actions</span>
-                                <span class="skill">Linux</span>
-                                <span class="skill">Microsoft Azure</span>
-                                <span class="skill">Python</span>
-                                <span class="skill">Bash</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="stat">
+              <div class="stat-top"><span class="stat-sla">99.5%</span></div>
+              <span class="stat-label">SLA Garantido</span>
             </div>
-        </section>
-
-        <section id="projetos" class="projects">
-            <div class="container">
-                <h2>📂 Projetos em Destaque</h2>
-                <div class="projects-grid">
-                    <div class="project-card">
-                        <h3>🏗️ Infraestrutura Microsoft Azure com Terraform</h3>
-                        <p>Automação completa de infraestrutura na Azure usando Terraform e GitHub Actions.</p>
-                        <div class="project-tech">
-                            <span>Terraform</span>
-                            <span>Azure</span>
-                            <span>GitHub Actions</span>
-                        </div>
-                        <a href="#" class="project-link">Ver no GitHub <i class="fab fa-github"></i></a>
-                    </div>
-
-                    <div class="project-card">
-                        <h3>🐳 Pipeline CI/CD com Docker</h3>
-                        <p>Pipeline completo de integração e deploy usando containers Docker.</p>
-                        <div class="project-tech">
-                            <span>Docker</span>
-                            <span>CI/CD</span>
-                            <span>Node.js</span>
-                        </div>
-                        <a href="#" class="project-link">Ver no GitHub <i class="fab fa-github"></i></a>
-                    </div>
-
-                    <div class="project-card">
-                        <h3>⚙️ Monitoramento com Prometheus</h3>
-                        <p>Stack de observabilidade com Prometheus, Grafana e AlertManager.</p>
-                        <div class="project-tech">
-                            <span>Prometheus</span>
-                            <span>Grafana</span>
-                            <span>Docker Compose</span>
-                        </div>
-                        <a href="#" class="project-link">Ver no GitHub <i class="fab fa-github"></i></a>
-                    </div>
-                </div>
+            <div class="stat">
+              <div class="stat-top"><span class="stat-number" data-target="10">0</span><span class="stat-plus">+</span></div>
+              <span class="stat-label">Certificações</span>
             </div>
-        </section>
-
-        <section id="contato" class="contact">
-            <div class="container">
-                <h2>📫 Vamos Conversar?</h2>
-                <div class="contact-content">
-                    <p>Interessado em colaborar ou discutir sobre DevOps? Entre em contato!</p>
-                    <div class="contact-links">
-                        <a href="mailto:lucasnovaisx@gmail.com" class="contact-link">
-                            <i class="fas fa-envelope"></i> Email
-                        </a>
-                        <a href="https://linkedin.com/in/lucas-novais-ximenes-6b66b017a/" class="contact-link">
-                            <i class="fab fa-linkedin"></i> LinkedIn
-                        </a>
-                        <a href="https://github.com/LucasNovaisXimenes" class="contact-link">
-                            <i class="fab fa-github"></i> GitHub
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 Meu Portfolio DevOps. Deploy automático via GitHub Actions 🚀</p>
-            <p>Última atualização: <span id="last-update"><!--TIMESTAMP--></span></p>
+          </div>
+          <div class="hero-actions">
+            <a href="#projetos" class="btn btn-primary">Ver Projetos</a>
+            <a href="#contato" class="btn btn-outline">Entrar em Contato</a>
+          </div>
         </div>
-    </footer>
 
-    <script src="assets/script.js"></script>
+        <div class="hero-terminal">
+          <div class="terminal-header">
+            <span class="terminal-dot red"></span>
+            <span class="terminal-dot yellow"></span>
+            <span class="terminal-dot green"></span>
+            <span class="terminal-title">lucas@devops:~$</span>
+          </div>
+          <div class="terminal-body">
+            <div class="terminal-line"><span class="t-prompt">$</span> <span class="t-cmd">kubectl get nodes</span></div>
+            <div class="terminal-line t-output">NAME          STATUS   ROLES    AGE   VERSION</div>
+            <div class="terminal-line t-output">prod-node-1   Ready    master   2d    v1.28.0</div>
+            <div class="terminal-line t-output">prod-node-2   Ready    worker   2d    v1.28.0</div>
+            <div class="terminal-line t-spacer"></div>
+            <div class="terminal-line"><span class="t-prompt">$</span> <span class="t-cmd">terraform apply -auto-approve</span></div>
+            <div class="terminal-line t-success">Apply complete! Resources: 12 added.</div>
+            <div class="terminal-line t-spacer"></div>
+            <div class="terminal-line"><span class="t-prompt">$</span> <span class="t-cmd">argocd app sync prod-app</span></div>
+            <div class="terminal-line t-success">Synced  Health: Healthy ✓</div>
+            <div class="terminal-line t-spacer"></div>
+            <div class="terminal-line"><span class="t-prompt">$</span> <span class="cursor-term">▌</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <a href="#sobre" aria-label="Rolar para baixo"><i class="fas fa-chevron-down"></i></a>
+      </div>
+    </section>
+
+    <!-- SOBRE -->
+    <section id="sobre" class="section">
+      <div class="container">
+        <h2 class="section-title">Sobre <span class="accent">Mim</span></h2>
+        <div class="sobre-grid">
+          <div class="sobre-text">
+            <p>
+              Profissional de TI com mais de <strong>6 anos de experiência</strong> em ambientes críticos de alta disponibilidade, atuando hoje no projeto da <strong>Caixa Econômica Federal</strong> como Analista de Produção Pleno pela Global Hitss.
+            </p>
+            <p>
+              Especializado em <strong>Cloud (Azure, AWS, Oracle)</strong>, orquestração de containers com <strong>Kubernetes e OpenShift</strong>, pipelines <strong>CI/CD</strong> e observabilidade completa. Histórico comprovado de automação de processos, redução de incidentes e sustentação de aplicações críticas com SLA acima de 99,5%.
+            </p>
+            <p>
+              Apaixonado por infraestrutura moderna e cultura DevOps — acredito que boas práticas de engenharia evitam incidentes antes que eles aconteçam.
+            </p>
+            <div class="sobre-info">
+              <div class="info-item"><i class="fas fa-map-marker-alt"></i> Brasília, DF – Vicente Pires</div>
+              <div class="info-item"><i class="fas fa-envelope"></i> lucasnovaisx@gmail.com</div>
+              <div class="info-item"><i class="fas fa-language"></i> Inglês Técnico – nível intermediário</div>
+              <div class="info-item"><i class="fas fa-graduation-cap"></i> Tecnologia em ADS – UNIPLAN (2019–2021)</div>
+            </div>
+          </div>
+
+          <div class="sobre-highlights">
+            <div class="highlight-card">
+              <i class="fas fa-cloud"></i>
+              <h3>Multi-Cloud</h3>
+              <p>Azure, AWS e Oracle Cloud com certificações ativas nas três plataformas em 2025.</p>
+            </div>
+            <div class="highlight-card">
+              <i class="fas fa-dharmachakra"></i>
+              <h3>Kubernetes & Containers</h3>
+              <p>Gestão de clusters em produção com AKS, OKD e OpenShift em ambientes bancários críticos.</p>
+            </div>
+            <div class="highlight-card">
+              <i class="fas fa-code-branch"></i>
+              <h3>CI/CD & GitOps</h3>
+              <p>Pipelines completos com Azure DevOps, GitLab CI, ArgoCD e automação de deploys.</p>
+            </div>
+            <div class="highlight-card">
+              <i class="fas fa-chart-line"></i>
+              <h3>Observabilidade</h3>
+              <p>Dashboards no Grafana, alertas proativos com Prometheus e Application Insights.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIÊNCIA -->
+    <section id="experiencia" class="section section-dark">
+      <div class="container">
+        <h2 class="section-title">Experiência <span class="accent">Profissional</span></h2>
+        <div class="timeline">
+
+          <div class="timeline-item">
+            <div class="timeline-marker current"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div>
+                  <h3>Analista de Produção Pleno</h3>
+                  <p class="timeline-company"><i class="fas fa-building"></i> Global Hitss – Projeto Caixa Econômica Federal</p>
+                </div>
+                <div class="timeline-period">
+                  <span class="period-badge current-badge">Atual</span>
+                  <span class="period-date">Nov/2022 – Presente</span>
+                </div>
+              </div>
+              <ul class="timeline-bullets">
+                <li>Sustentação de ambientes críticos com SLA acima de 99,5% em produção bancária de alta demanda</li>
+                <li>Administração de clusters Kubernetes, OpenShift (OKD) e Docker via kubectl e oc CLI</li>
+                <li>Criação e manutenção de pipelines CI/CD com Azure DevOps, GitLab e GitOps via ArgoCD</li>
+                <li>Gerenciamento de serviços Azure: AKS, Functions, App Services, Service Bus, VNETs e Private Endpoints</li>
+                <li>Monitoramento e observabilidade com Grafana, Prometheus, Application Insights e CA Introscope</li>
+                <li>Automação de rotinas e deploys com Python, Shell Script e Control-M</li>
+                <li>Troubleshooting avançado em JBoss 7/6.3, Apache, Tomcat, IIS, WebSphere e IBM MQ</li>
+              </ul>
+              <div class="timeline-tags">
+                <span>Kubernetes</span><span>Azure</span><span>ArgoCD</span><span>Grafana</span><span>Docker</span><span>Terraform</span><span>Python</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div>
+                  <h3>Analista Multiplataforma Pleno</h3>
+                  <p class="timeline-company"><i class="fas fa-building"></i> RPerformance Group – Projeto Caixa Econômica Federal</p>
+                </div>
+                <div class="timeline-period">
+                  <span class="period-date">Nov/2021 – Out/2022</span>
+                </div>
+              </div>
+              <ul class="timeline-bullets">
+                <li>Monitoramento e operação de ambientes Unix, Linux e Windows assegurando disponibilidade de serviços críticos</li>
+                <li>Schedulagem de jobs com Control-M, PowerCenter e Pentaho, incluindo troubleshooting de pipelines batch</li>
+                <li>Operação de containers Docker e Kubernetes: restart de pods, análise de falhas e verificação de saúde</li>
+                <li>Observabilidade com Grafana, CA Introscope, Graylog e Elasticsearch</li>
+              </ul>
+              <div class="timeline-tags">
+                <span>Docker</span><span>Kubernetes</span><span>Grafana</span><span>Control-M</span><span>Linux</span><span>Elasticsearch</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div>
+                  <h3>Analista de Sistemas I</h3>
+                  <p class="timeline-company"><i class="fas fa-building"></i> Oi Móvel / V.Tal</p>
+                </div>
+                <div class="timeline-period">
+                  <span class="period-date">Nov/2019 – Nov/2021</span>
+                </div>
+              </div>
+              <ul class="timeline-bullets">
+                <li>Monitoramento proativo de aplicações e infraestrutura com detecção precoce de falhas</li>
+                <li>Administração de bancos de dados Oracle, MySQL e SQL Server: queries, permissões, tuning e backups</li>
+                <li>Troubleshooting em Linux/Unix em servidores de missão crítica</li>
+                <li>Instalação, configuração e manutenção do Control-M: workflows e agendamento de jobs</li>
+              </ul>
+              <div class="timeline-tags">
+                <span>Oracle DB</span><span>Linux</span><span>Control-M</span><span>SQL Server</span><span>MySQL</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div>
+                  <h3>Operador Técnico Jr.</h3>
+                  <p class="timeline-company"><i class="fas fa-building"></i> GlobalWeb</p>
+                </div>
+                <div class="timeline-period">
+                  <span class="period-date">Dez/2018 – Nov/2019</span>
+                </div>
+              </div>
+              <ul class="timeline-bullets">
+                <li>Operação de servidores JBoss e Tomcat: restart, análise de logs e escalonamento técnico</li>
+                <li>Administração do agente Patrol (BMC) para monitoração de ambientes críticos</li>
+                <li>Instalação e configuração de Control-M em servidores Windows e Linux</li>
+              </ul>
+              <div class="timeline-tags">
+                <span>JBoss</span><span>Tomcat</span><span>Control-M</span><span>BMC Patrol</span><span>Windows Server</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- HABILIDADES -->
+    <section id="habilidades" class="section">
+      <div class="container">
+        <h2 class="section-title">Competências <span class="accent">Técnicas</span></h2>
+        <div class="skills-grid">
+
+          <div class="skill-category">
+            <div class="skill-cat-header">
+              <i class="fas fa-cloud"></i>
+              <h3>Cloud Platforms</h3>
+            </div>
+            <div class="skill-tags">
+              <span>Microsoft Azure</span><span>AKS</span><span>App Services</span>
+              <span>Azure Functions</span><span>Service Bus</span><span>Private Endpoints</span>
+              <span>VNETs</span><span>Monitor</span><span>AWS</span><span>Oracle Cloud</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <div class="skill-cat-header">
+              <i class="fas fa-dharmachakra"></i>
+              <h3>Containers & Orquestração</h3>
+            </div>
+            <div class="skill-tags">
+              <span>Docker</span><span>Kubernetes</span><span>OpenShift (OKD)</span>
+              <span>kubectl</span><span>oc CLI</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <div class="skill-cat-header">
+              <i class="fas fa-code-branch"></i>
+              <h3>CI/CD & DevOps</h3>
+            </div>
+            <div class="skill-tags">
+              <span>Azure DevOps</span><span>GitLab CI</span><span>GitHub Actions</span>
+              <span>ArgoCD</span><span>Jenkins</span><span>Terraform</span><span>GitOps</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <div class="skill-cat-header">
+              <i class="fas fa-chart-line"></i>
+              <h3>Observabilidade</h3>
+            </div>
+            <div class="skill-tags">
+              <span>Grafana</span><span>Prometheus</span><span>Application Insights</span>
+              <span>Graylog</span><span>Elasticsearch</span><span>CA Introscope</span>
+              <span>Zabbix</span><span>Nagios</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <div class="skill-cat-header">
+              <i class="fas fa-server"></i>
+              <h3>Servidores & Middleware</h3>
+            </div>
+            <div class="skill-tags">
+              <span>JBoss 7/6.3</span><span>Apache</span><span>Tomcat</span>
+              <span>IIS</span><span>WebSphere</span><span>IBM MQ</span><span>Spring Boot</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <div class="skill-cat-header">
+              <i class="fas fa-terminal"></i>
+              <h3>Automação & Scripting</h3>
+            </div>
+            <div class="skill-tags">
+              <span>Python</span><span>Shell Script</span><span>Bash</span>
+              <span>Control-M</span><span>PowerShell</span><span>Pentaho</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <div class="skill-cat-header">
+              <i class="fab fa-linux"></i>
+              <h3>Sistemas Operacionais</h3>
+            </div>
+            <div class="skill-tags">
+              <span>Linux RedHat</span><span>Ubuntu</span><span>Unix/Solaris</span>
+              <span>Windows Server</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <div class="skill-cat-header">
+              <i class="fas fa-database"></i>
+              <h3>Banco de Dados & Redes</h3>
+            </div>
+            <div class="skill-tags">
+              <span>Oracle DB</span><span>MySQL</span><span>SQL Server</span>
+              <span>TCP/IP</span><span>DNS</span><span>Firewall</span><span>NAT</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CERTIFICAÇÕES -->
+    <section id="certificacoes" class="section section-dark">
+      <div class="container">
+        <h2 class="section-title">Certificações & <span class="accent">Cursos</span></h2>
+        <div class="certs-grid">
+
+          <div class="cert-card featured">
+            <div class="cert-icon azure"><i class="fab fa-microsoft"></i></div>
+            <div class="cert-info">
+              <h3>Azure Administrator Associate</h3>
+              <p>Microsoft Certified – AZ-104</p>
+              <span class="cert-year">2025</span>
+            </div>
+          </div>
+
+          <div class="cert-card featured">
+            <div class="cert-icon aws"><i class="fab fa-aws"></i></div>
+            <div class="cert-info">
+              <h3>AWS Cloud Practitioner</h3>
+              <p>Amazon Web Services – CLF-C02</p>
+              <span class="cert-year">2025</span>
+            </div>
+          </div>
+
+          <div class="cert-card featured">
+            <div class="cert-icon oracle"><i class="fas fa-cloud"></i></div>
+            <div class="cert-info">
+              <h3>Oracle Cloud Infrastructure</h3>
+              <p>OCI Foundations Associate</p>
+              <span class="cert-year">2025</span>
+            </div>
+          </div>
+
+          <div class="cert-card">
+            <div class="cert-icon fullcycle"><i class="fas fa-dharmachakra"></i></div>
+            <div class="cert-info">
+              <h3>Kubernetes</h3>
+              <p>FullCycle</p>
+              <span class="cert-year">2025</span>
+            </div>
+          </div>
+
+          <div class="cert-card">
+            <div class="cert-icon fullcycle"><i class="fas fa-layer-group"></i></div>
+            <div class="cert-info">
+              <h3>Terraform</h3>
+              <p>FullCycle</p>
+              <span class="cert-year">2025</span>
+            </div>
+          </div>
+
+          <div class="cert-card">
+            <div class="cert-icon docker"><i class="fab fa-docker"></i></div>
+            <div class="cert-info">
+              <h3>Docker</h3>
+              <p>FullCycle</p>
+              <span class="cert-year">2024</span>
+            </div>
+          </div>
+
+          <div class="cert-card">
+            <div class="cert-icon prometheus"><i class="fas fa-chart-area"></i></div>
+            <div class="cert-info">
+              <h3>Prometheus do Zero ao Avançado</h3>
+              <p>Udemy</p>
+              <span class="cert-year">2024</span>
+            </div>
+          </div>
+
+          <div class="cert-card">
+            <div class="cert-icon github"><i class="fab fa-github"></i></div>
+            <div class="cert-info">
+              <h3>Git e GitHub</h3>
+              <p>FullCycle</p>
+              <span class="cert-year">2025</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJETOS -->
+    <section id="projetos" class="section">
+      <div class="container">
+        <h2 class="section-title">Projetos em <span class="accent">Destaque</span></h2>
+        <div class="projects-grid">
+
+          <div class="project-card">
+            <div class="project-header">
+              <i class="fas fa-layer-group project-icon"></i>
+              <div class="project-links">
+                <a href="https://github.com/LucasNovaisXimenes" target="_blank" rel="noopener" title="GitHub"><i class="fab fa-github"></i></a>
+              </div>
+            </div>
+            <h3>Infraestrutura Multi-Cloud com Terraform</h3>
+            <p>Provisionamento de infraestrutura em Azure e AWS com Terraform usando módulos reutilizáveis, backend remoto e gestão de estado. Inclui VNETs, VPCs, AKS e EKS.</p>
+            <div class="project-tags">
+              <span>Terraform</span><span>Azure</span><span>AWS</span><span>IaC</span><span>AKS</span>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-header">
+              <i class="fas fa-code-branch project-icon"></i>
+              <div class="project-links">
+                <a href="https://github.com/LucasNovaisXimenes" target="_blank" rel="noopener" title="GitHub"><i class="fab fa-github"></i></a>
+              </div>
+            </div>
+            <h3>Pipeline GitOps com ArgoCD e Kubernetes</h3>
+            <p>Pipeline CI/CD completo com GitLab CI para build e push de imagens Docker, sincronização automática via ArgoCD e deploy no cluster Kubernetes com rollback automático.</p>
+            <div class="project-tags">
+              <span>ArgoCD</span><span>Kubernetes</span><span>GitLab CI</span><span>Docker</span><span>GitOps</span>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-header">
+              <i class="fas fa-chart-line project-icon"></i>
+              <div class="project-links">
+                <a href="https://github.com/LucasNovaisXimenes" target="_blank" rel="noopener" title="GitHub"><i class="fab fa-github"></i></a>
+              </div>
+            </div>
+            <h3>Stack de Observabilidade Completa</h3>
+            <p>Stack de monitoramento com Prometheus, Grafana e Alertmanager via Docker Compose. Dashboards customizados para métricas de aplicação, infraestrutura e alertas proativos por e-mail e Slack.</p>
+            <div class="project-tags">
+              <span>Prometheus</span><span>Grafana</span><span>Alertmanager</span><span>Docker</span>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-header">
+              <i class="fas fa-robot project-icon"></i>
+              <div class="project-links">
+                <a href="https://github.com/LucasNovaisXimenes" target="_blank" rel="noopener" title="GitHub"><i class="fab fa-github"></i></a>
+              </div>
+            </div>
+            <h3>Automação de Deploys com Python e Azure DevOps</h3>
+            <p>Scripts Python para automação de deploys, validação de ambientes e notificações via pipelines Azure DevOps. Integração com APIs REST e rollback automatizado em caso de falha.</p>
+            <div class="project-tags">
+              <span>Python</span><span>Azure DevOps</span><span>Shell Script</span><span>REST API</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section id="contato" class="section section-dark">
+      <div class="container">
+        <h2 class="section-title">Vamos <span class="accent">Conversar?</span></h2>
+        <p class="contact-intro">Aberto a novas oportunidades em infraestrutura moderna, DevOps e Cloud. Entre em contato!</p>
+        <div class="contact-grid">
+          <a href="mailto:lucasnovaisx@gmail.com" class="contact-card">
+            <i class="fas fa-envelope"></i>
+            <div>
+              <h3>E-mail</h3>
+              <p>lucasnovaisx@gmail.com</p>
+            </div>
+          </a>
+          <a href="https://linkedin.com/in/lucas-novais-ximenes-6b66b017a/" target="_blank" rel="noopener" class="contact-card">
+            <i class="fab fa-linkedin"></i>
+            <div>
+              <h3>LinkedIn</h3>
+              <p>lucas-novais-ximenes</p>
+            </div>
+          </a>
+          <a href="https://github.com/LucasNovaisXimenes" target="_blank" rel="noopener" class="contact-card">
+            <i class="fab fa-github"></i>
+            <div>
+              <h3>GitHub</h3>
+              <p>LucasNovaisXimenes</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container footer-content">
+      <p class="footer-brand">Lucas Novais Ximenes</p>
+      <p class="footer-sub">Analista de Infraestrutura &nbsp;·&nbsp; DevOps &nbsp;·&nbsp; Cloud</p>
+      <p class="footer-meta">Atualizado em <span id="last-update"></span> &nbsp;·&nbsp; Deploy automático via GitHub Actions</p>
+    </div>
+  </footer>
+
+  <script src="assets/script.js"></script>
 </body>
-
 </html>
