@@ -39,10 +39,10 @@ document.addEventListener('DOMContentLoaded', () => {
   // ── Typing effect ─────────────────────────────────────────────
   const typedEl = document.getElementById('typed-text');
   const phrases = [
-    'Analista de Infraestrutura',
-    'DevOps Engineer',
-    'Cloud Specialist',
-    'Kubernetes Administrator',
+    'Desenvolvedor Fullstack',
+    'Java Backend Developer',
+    'Cloud & DevOps Engineer',
+    'Kubernetes & Microsserviços',
   ];
   let phraseIdx = 0, charIdx = 0, deleting = false, lastTime = 0;
 
