@@ -40,9 +40,9 @@ document.addEventListener('DOMContentLoaded', () => {
   const typedEl = document.getElementById('typed-text');
   const phrases = [
     'Desenvolvedor Fullstack',
+    'DevOps & Deploy Engineer',
     'Java Backend Developer',
-    'Cloud & DevOps Engineer',
-    'Kubernetes & Microsserviços',
+    'Kubernetes & Cloud',
   ];
   let phraseIdx = 0, charIdx = 0, deleting = false, lastTime = 0;
 
